@@ -1,0 +1,35 @@
+track tool1_sample1_annotated
+bigDataUrl https://jackcurragh.github.io/RiboInsightHub/data/tool1_sample1_annotated.bb
+shortLabel ORF Tool 1 annotated ORFs (Pancreas 1)
+longLabel ORF Tool 1 annotated ORFs (Pancreas 1) from ORF Tool 1 v1.0.0
+type bigBed 12
+visibility pack
+color 0,100,0
+priority 1
+
+track tool1_sample1_novel
+bigDataUrl https://jackcurragh.github.io/RiboInsightHub/data/tool1_sample1_novel.bb
+shortLabel ORF Tool 1 novel ORFs (Pancreas 1)
+longLabel ORF Tool 1 novel ORFs (Pancreas 1) from ORF Tool 1 v1.0.0
+type bigBed 12
+visibility pack
+color 200,0,0
+priority 2
+
+track tool2_sample1_annotated
+bigDataUrl https://jackcurragh.github.io/RiboInsightHub/data/tool2_sample1_annotated.bb
+shortLabel ORF Tool 2 annotated ORFs (Pancreas 1)
+longLabel ORF Tool 2 annotated ORFs (Pancreas 1) from ORF Tool 2 v2.1.0
+type bigBed 12
+visibility pack
+color 0,100,0
+priority 1
+
+track tool2_sample1_novel
+bigDataUrl https://jackcurragh.github.io/RiboInsightHub/data/tool2_sample1_novel.bb
+shortLabel ORF Tool 2 novel ORFs (Pancreas 1)
+longLabel ORF Tool 2 novel ORFs (Pancreas 1) from ORF Tool 2 v2.1.0
+type bigBed 12
+visibility pack
+color 200,0,0
+priority 2 

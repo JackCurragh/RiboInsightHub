@@ -3,6 +3,7 @@
 import React from 'react';
 import MainNav from '@/components/Navigation/MainNav';
 import UCSCBrowser from '@/components/TrackHub/UCSCBrowser';
+import { getBasePath } from '@/lib/utils/path';
 
 // Mock data for development - replace with actual data later
 const mockTools = [
@@ -56,6 +57,11 @@ const mockSamples = [
 ] as const;
 
 export default function BrowsePage() {
+  // Get the base URL for the current environment
+  const baseUrl = typeof window !== 'undefined' 
+    ? `${window.location.protocol}//${window.location.host}${getBasePath()}`
+    : 'https://jackcurragh.github.io/RiboInsightHub';
+
   return (
     <div className="min-h-screen bg-gray-50">
       <MainNav />
@@ -74,7 +80,7 @@ export default function BrowsePage() {
           <UCSCBrowser
             tools={mockTools}
             samples={mockSamples}
-            baseUrl="https://jackcurragh.github.io/RiboInsightHub"
+            baseUrl={baseUrl}
             hubName="riboinsight_hub"
           />
         </div>

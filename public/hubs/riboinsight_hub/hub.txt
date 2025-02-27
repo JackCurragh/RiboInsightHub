@@ -1,0 +1,6 @@
+hub riboinsight_hub
+shortLabel RiboInsightHub
+longLabel RiboInsightHub - ORF Caller Comparison Platform
+genomesFile genomes.txt
+email example@example.com
+descriptionUrl description.html 
