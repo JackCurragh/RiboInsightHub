@@ -3,11 +3,8 @@ export function getBasePath(): string {
 }
 
 export function createPath(path: string): string {
-  const basePath = getBasePath();
-  // Remove any leading or trailing slashes
+  // Just clean the path and ensure proper slashes
+  // Next.js will handle adding the base path
   const cleanPath = path.replace(/^\/+|\/+$/g, '');
-  // Combine base path with clean path, ensuring single slashes
-  const fullPath = [basePath, cleanPath].filter(Boolean).join('/');
-  // Add leading slash and handle root path
-  return fullPath ? `/${fullPath}` : '/';
+  return cleanPath ? `/${cleanPath}` : '/';
 } 

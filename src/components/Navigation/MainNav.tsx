@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { createPath, getBasePath } from '@/lib/utils/path';
+import { createPath } from '@/lib/utils/path';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -14,10 +14,9 @@ const navItems = [
 
 export default function MainNav() {
   const pathname = usePathname();
-  const basePath = getBasePath();
   
-  // Remove the base path from the pathname for comparison
-  const normalizedPathname = pathname.replace(basePath, '') || '/';
+  // Remove any trailing slashes for comparison
+  const normalizedPathname = pathname.replace(/\/+$/, '') || '/';
 
   return (
     <nav className="bg-white shadow-lg">
@@ -32,11 +31,12 @@ export default function MainNav() {
             
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               {navItems.map((item) => {
-                const isActive = normalizedPathname === item.href;
+                const itemPath = createPath(item.href);
+                const isActive = normalizedPathname.endsWith(itemPath);
                 return (
                   <Link
                     key={item.href}
-                    href={createPath(item.href)}
+                    href={itemPath}
                     className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
                       isActive
                         ? 'border-indigo-500 text-gray-900'

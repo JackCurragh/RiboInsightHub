@@ -74,7 +74,7 @@ export default function BrowsePage() {
           <UCSCBrowser
             tools={mockTools}
             samples={mockSamples}
-            baseUrl="https://example.com"
+            baseUrl="https://jackcurragh.github.io/RiboInsightHub"
             hubName="riboinsight_hub"
           />
         </div>
