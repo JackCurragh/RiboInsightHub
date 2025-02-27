@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import MainNav from '@/components/Navigation/MainNav';
+import { createPath } from '@/lib/utils/path';
 
 export default function NotFound() {
   return (
@@ -18,7 +19,7 @@ export default function NotFound() {
             </p>
             <div className="mt-6">
               <Link
-                href="/"
+                href={createPath('/')}
                 className="text-base font-medium text-indigo-600 hover:text-indigo-500"
               >
                 Go back home<span aria-hidden="true"> &rarr;</span>

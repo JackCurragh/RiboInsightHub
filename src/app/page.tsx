@@ -1,5 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import MainNav from '@/components/Navigation/MainNav';
+import { createPath } from '@/lib/utils/path';
 
 export default function Home() {
   return (
@@ -25,12 +27,12 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-500">
                   Visualize ORF calls in UCSC Genome Browser with custom track hubs
                 </p>
-                <a
-                  href="/browse"
+                <Link
+                  href={createPath('/browse')}
                   className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
                 >
                   Launch Browser
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -40,12 +42,12 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-500">
                   Compare ORF calls between different tools and analyze their performance
                 </p>
-                <a
-                  href="/compare"
+                <Link
+                  href={createPath('/compare')}
                   className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
                 >
                   Start Comparison
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -55,12 +57,12 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-500">
                   View detailed information about each ORF calling tool and their results
                 </p>
-                <a
-                  href="/tools"
+                <Link
+                  href={createPath('/tools')}
                   className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
                 >
                   View Tools
-                </a>
+                </Link>
               </div>
             </div>
           </div>
