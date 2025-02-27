@@ -4,7 +4,10 @@ export function getBasePath(): string {
 
 export function createPath(path: string): string {
   const basePath = getBasePath();
-  // Remove any leading slashes from the path and add a single leading slash
-  const cleanPath = path.replace(/^\/+/, '');
-  return `${basePath}/${cleanPath}`.replace(/\/+$/, '');
+  // Remove any leading or trailing slashes
+  const cleanPath = path.replace(/^\/+|\/+$/g, '');
+  // Combine base path with clean path, ensuring single slashes
+  const fullPath = [basePath, cleanPath].filter(Boolean).join('/');
+  // Add leading slash and handle root path
+  return fullPath ? `/${fullPath}` : '/';
 } 
