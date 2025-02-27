@@ -3,7 +3,6 @@
 import React from 'react';
 import MainNav from '@/components/Navigation/MainNav';
 import UCSCBrowser from '@/components/TrackHub/UCSCBrowser';
-import { getBasePath } from '@/lib/utils/path';
 
 // Mock data for development - replace with actual data later
 const mockTools = [
