@@ -59,8 +59,11 @@ const mockSamples = [
 export default function BrowsePage() {
   // Get the base URL for the current environment
   const baseUrl = typeof window !== 'undefined' 
-    ? `${window.location.protocol}//${window.location.host}${getBasePath()}`
+    ? `${window.location.protocol}//${window.location.host}`  // Remove getBasePath() since we're serving from root in dev
     : 'https://jackcurragh.github.io/RiboInsightHub';
+
+  // Log the URL for debugging
+  console.log('Hub URL:', `${baseUrl}/hubs/riboinsight_hub/hub.txt`);
 
   return (
     <div className="min-h-screen bg-gray-50">
