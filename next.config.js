@@ -5,6 +5,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  reactStrictMode: true,
+  swcMinify: true,
+  trailingSlash: true,
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig; 

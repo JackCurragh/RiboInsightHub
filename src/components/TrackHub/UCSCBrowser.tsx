@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Tool, Sample } from '@/lib/types/orf';
 import { generateTrackHubUrls } from '@/lib/utils/trackHub';
 
 interface UCSCBrowserProps {
-  tools: Tool[];
-  samples: Sample[];
+  tools: readonly Tool[];
+  samples: readonly Sample[];
   baseUrl: string;
   hubName: string;
 }

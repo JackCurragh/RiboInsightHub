@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import MainNav from '@/components/Navigation/MainNav';
 import UCSCBrowser from '@/components/TrackHub/UCSCBrowser';
