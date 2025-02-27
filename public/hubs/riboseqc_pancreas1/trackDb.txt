@@ -1,0 +1,17 @@
+track riboseqc_pancreas1_annotated
+bigDataUrl https://example.com/RiboInsightHub/data/riboseqc_pancreas1_annotated.bb
+shortLabel RiboSeQC Annotated ORFs
+longLabel RiboSeQC Annotated ORFs from Pancreas1 Sample
+type bigBed 12
+visibility pack
+color 0,100,0
+priority 1
+
+track riboseqc_pancreas1_novel
+bigDataUrl https://example.com/RiboInsightHub/data/riboseqc_pancreas1_novel.bb
+shortLabel RiboSeQC Novel ORFs
+longLabel RiboSeQC Novel ORFs from Pancreas1 Sample
+type bigBed 12
+visibility pack
+color 200,0,0
+priority 2 

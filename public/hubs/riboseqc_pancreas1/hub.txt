@@ -1,0 +1,6 @@
+hub RiboSeQC_Pancreas1
+shortLabel RiboSeQC Pancreas1
+longLabel RiboSeQC ORF calls for Pancreas1 sample
+genomesFile genomes.txt
+email example@example.com
+descriptionUrl description.html 

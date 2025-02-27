@@ -1,0 +1,60 @@
+{
+  "tools": [
+    {
+      "id": "riboseqc",
+      "name": "RiboSeQC",
+      "version": "1.0.0",
+      "description": "Comprehensive ORF caller with quality control",
+      "performanceMetrics": {
+        "runtime": 3600,
+        "memoryUsage": 4096
+      }
+    },
+    {
+      "id": "price",
+      "name": "PRICE",
+      "version": "2.0.0",
+      "description": "Precise ORF identification tool",
+      "performanceMetrics": {
+        "runtime": 2800,
+        "memoryUsage": 3584
+      }
+    },
+    {
+      "id": "ribocode",
+      "name": "RiboCode",
+      "version": "1.2.0",
+      "description": "Statistical approach to ORF calling",
+      "performanceMetrics": {
+        "runtime": 4200,
+        "memoryUsage": 5120
+      }
+    }
+  ],
+  "samples": [
+    {
+      "id": "pancreas1",
+      "name": "Pancreas 1",
+      "dataset": "GSE144682",
+      "type": "pancreas",
+      "isPooled": false,
+      "metadata": {
+        "riboSeqFile": "SRR11005875_to_79.Aligned.sortedByCoord.out.bam",
+        "rnaSeqFile": "SRR11005905.Aligned.sortedByCoord.out.bam",
+        "gseAccession": "GSE144682"
+      }
+    },
+    {
+      "id": "fibroblast_pooled",
+      "name": "Fibroblast Pooled",
+      "dataset": "GSE182371",
+      "type": "fibroblast",
+      "isPooled": true,
+      "metadata": {
+        "riboSeqFile": "Ribo_Fib_pooled.bam",
+        "rnaSeqFile": "RNA_fib_pooled.bam",
+        "gseAccession": "GSE182371"
+      }
+    }
+  ]
+} 

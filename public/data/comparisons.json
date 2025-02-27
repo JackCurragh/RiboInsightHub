@@ -1,0 +1,37 @@
+{
+  "comparisons": [
+    {
+      "toolA": "riboseqc",
+      "toolB": "price",
+      "sample": "pancreas1",
+      "metrics": {
+        "sharedORFs": 1500,
+        "uniqueToA": 300,
+        "uniqueToB": 250,
+        "overlapPercentage": 75.5
+      }
+    },
+    {
+      "toolA": "riboseqc",
+      "toolB": "ribocode",
+      "sample": "pancreas1",
+      "metrics": {
+        "sharedORFs": 1200,
+        "uniqueToA": 600,
+        "uniqueToB": 400,
+        "overlapPercentage": 65.2
+      }
+    },
+    {
+      "toolA": "price",
+      "toolB": "ribocode",
+      "sample": "pancreas1",
+      "metrics": {
+        "sharedORFs": 1350,
+        "uniqueToA": 450,
+        "uniqueToB": 350,
+        "overlapPercentage": 70.8
+      }
+    }
+  ]
+} 
